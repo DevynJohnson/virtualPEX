@@ -22,7 +22,7 @@ connectToDatabase(); // Establish the connection
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: ["http://localhost:5173", ""],
+  origin: ["http://localhost:5173"],
   credentials: true,
 }));
 
@@ -38,9 +38,9 @@ app.use('/api/users', userRoutes);
 
 
 // Fallback route for all other requests to send the React app's index.html
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '../../client/dist', 'index.html'));
-});
+// app.get('*', (_req, res) => {
+//   res.sendFile(path.join(__dirname, '../../client/dist', 'index.html'));
+// });
 
 // Start the server once the database is connected
 app.listen(PORT, () => {
