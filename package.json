@@ -1,0 +1,21 @@
+{
+  "name": "virtualpex",
+  "version": "1.0.0",
+  "description": "A virtual picture exchange communication board designed for children who are non-verbal or speech delayed as a form of communicating their wants and needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevynJohnson/virtualPEX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DevynJohnson/virtualPEX/issues"
+  },
+  "homepage": "https://github.com/DevynJohnson/virtualPEX#readme"
+}
