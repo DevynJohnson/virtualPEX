@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
+  const [username, setUsername] =useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate(); // Use this to navigate after signup
@@ -14,8 +15,8 @@ const Signup = () => {
     setError(''); // Reset error before each submit
 
     // Basic validation
-    if (!email || !password) {
-      setError('Please fill in both fields');
+    if (!email || !username || !password) {
+      setError('Please fill in all fields');
       return;
     }
 
@@ -25,7 +26,7 @@ const Signup = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, username, password }),
       });
    
       const data = await response.json().catch(() => ({})); // Avoid JSON parsing errors
