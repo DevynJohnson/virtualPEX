@@ -30,7 +30,7 @@ router.post('/login', async (req, res) => {
     res.json({ token, user });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'An error occurred while processing your request' });
+    res.status(500).json({ message: 'An error occurred while processing your request.' });
   }
 });
 
