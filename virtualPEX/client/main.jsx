@@ -1,10 +1,41 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './index.css';
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+import App from './App.jsx';
+import Home from './pages/Home.jsx';
+import Login from './pages/Login.jsx';
+import Signup from './pages/Signup.jsx';
+import ErrorPage from './pages/Error.jsx';
+import Food from './pages/Food.jsx';
+import Clothing from './pages/Clothing.jsx';
+import Household from './pages/Household.jsx';
+import Toys from './pages/Toys.jsx';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'login', element: <Login /> },
+      { path: 'signup', element: <Signup /> },
+      { path: 'food', element: <Food /> },
+      { path: 'clothing', element: <Clothing /> },
+      { path: 'household', element: <Household /> },
+      { path: 'toys', element: <Toys />},
+    ],
+  },
+]);
+
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(<RouterProvider router={router} />);
+} else {
+  console.error('No root element found');
+}

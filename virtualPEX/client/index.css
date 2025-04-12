@@ -13,6 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow: hidden;
+  width: 100vw;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
