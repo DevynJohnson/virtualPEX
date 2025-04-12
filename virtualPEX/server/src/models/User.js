@@ -33,10 +33,10 @@ userSchema.pre('save', async function (next) {
   if (this.isNew || this.isModified('password')) {
     try {
       // Use bcrypt to hash the password
-      this.password = await bcrypt.hash(this.password, 10); // You can adjust the salt rounds (10 here)
+      this.password = await bcrypt.hash(this.password, 10);
       next();
     } catch (error) {
-      next(error); // Pass any error to the next middleware
+      next(error);
     }
   } else {
     next();

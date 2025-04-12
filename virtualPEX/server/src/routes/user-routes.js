@@ -4,16 +4,16 @@ import jwt from 'jsonwebtoken';
 
 const router = express.Router();
 
-// Sign Token function
+// Sign Token method returns a signed token to the user after login
 const signToken = (user) => {
   return jwt.sign(
     { id: user._id, email: user.email },
-    process.env.JWT_SECRET || 'learntotalkwithme', // Replace with an actual secret
+    process.env.JWT_SECRET || 'learntotalkwithme',
     { expiresIn: '1h' }
   );
 };
 
-// Login route
+// POST Login route - login existing user
 router.post('/login', async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -34,7 +34,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Signup route
+// Post Signup route - creates a new user
 router.post('/signup', async (req, res) => {
   try {
     const user = await User.create(req.body); // Make sure req.body contains { email, password, username }
