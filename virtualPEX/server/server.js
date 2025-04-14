@@ -4,19 +4,20 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import connectToDatabase from './src/config/connection.js'; // Import the connection function
-import userRoutes from './src/routes/user-routes.js'; // Import the user routes
+import userRoutes from './src/routes/user-routes.js';
+import itemRoutes from './src/routes/item-routes.js';
 
-dotenv.config(); // Load environment variables
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Fix for ES module __dirname
+// Define __filename and __dirname variables as they no longer have built-in definitions
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Connect to MongoDB
-connectToDatabase(); // Establish the connection
+// Connect to MongoDB using the method defined at server/src/config/connection.js
+connectToDatabase();
 
 // Set up middleware
 app.use(express.json());
@@ -26,23 +27,19 @@ app.use(cors({
   credentials: true,
 }));
 
-// Serve static frontend files (since index.html is directly inside the 'client' folder)
+// Serve static frontend files for production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client/dist')));  // Serving the 'client' folder
+  app.use(express.static(path.join(__dirname, '../../client')));  // Serving the 'client' folder
   app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../../client/dist', 'index.html')); // Serve index.html from 'client'
+    res.sendFile(path.join(__dirname, '../../client', 'index.html')); // Serve index.html from 'client'
   });
 }
 
+// Define API routes
 app.use('/api/users', userRoutes);
+app.use('/api/items', itemRoutes);
 
-
-// Fallback route for all other requests to send the React app's index.html
-// app.get('*', (_req, res) => {
-//   res.sendFile(path.join(__dirname, '../../client/dist', 'index.html'));
-// });
-
-// Start the server once the database is connected
+// Start server and log the current port
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
