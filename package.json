@@ -4,7 +4,7 @@
   "description": "A virtual picture exchange communication board designed for children who are non-verbal or speech delayed as a form of communicating their wants and needs.",
   "main": "virtualPEX/server/server.js",
   "scripts": {
-    "start": "cd server && npm run start",
+    "start": "cd virtualPEX/server && npm run start",
     "start:dev": "concurrently \"npm run server:dev\" \"wait-on tcp:3001 && npm run client:dev\"",
     "server": "cd virtualPEX/server && npm start",
     "server:dev": "cd virtualPEX/server && npm run dev",
