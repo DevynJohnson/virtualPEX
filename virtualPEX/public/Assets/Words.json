@@ -1,0 +1,1279 @@
+{
+    "Pronouns": [
+        {
+            "text": "I",
+            "image": "./Images/I_Me.png"
+        },
+        {
+            "text": "You",
+            "image": "./Images/You.png"
+        },
+        {
+            "text": "They/He/She",
+            "image": "./Images/They.png"
+        }
+    ],
+    "Sayings": [
+        {
+            "text": "Thank You",
+            "image": "./Images/ThankYou.png"
+        },
+        {
+            "text": "Please",
+            "image": "./Images/Please.png"
+        },
+        {
+            "text": "I Love You",
+            "image": "./Images/ILoveYou.png"
+
+        },
+        {
+            "text": "Hello",
+            "image": "./Images/Hello.png"
+        },
+        {
+            "text": "Goodbye",
+            "image": "./Images/Goodbye.png"
+        },
+        {
+            "text": "Yes",
+            "image": "./Images/Yes.png"
+        },
+        {
+            "text": "No",
+            "image": "./Images/No.png"
+        },
+        {
+            "text": "I Don't Know",
+            "image": "./Images/IDontKnow.png"
+        },
+        {
+            "text": "Maybe",
+            "image": "./Images/Maybe.png"
+        },
+        {
+            "text": "I'm Sorry",
+            "image": "./Images/ImSorry.png"
+        },
+        {
+            "text": "Excuse Me",
+            "image": "./Images/ExcuseMe.png"
+        },
+        {
+            "text": "Help",
+            "image": "./Images/Help.png"
+        },
+        {
+            "text": "Stop",
+            "image": "./Images/Stop.png"
+        },
+        {
+            "text": "Go Away",
+            "image": "./Images/GoAway.png"
+        }
+    ],
+    "Questions": [
+        {
+            "text": "Who",
+            "image": "./Images/Who.png"
+        },
+        {
+            "text": "What",
+            "image": "./Images/What.png"
+        },
+        {
+            "text": "Where",
+            "image": "./Images/Where.png"
+        },
+        {
+            "text": "When",
+            "image": "./Images/When.png"
+        },
+        {
+            "text": "Why",
+            "image": "./Images/Why.png"
+        },
+        {
+            "text": "How",
+            "image": "./Images/How.png"
+        }
+    ],
+    "Verbs": [
+        {
+            "text": "Want",
+            "image": "./Images/Want.png"
+        },
+        {
+            "text": "Don't Want",
+            "image": "./Images/DontWant.png"
+        },
+        {
+            "text": "Need",
+            "image": "./Images/Need.png"
+        },
+        {
+            "text": "Don't Need",
+            "image": "./Images/DontNeed.png"
+        },
+        {
+            "text": "Smell",
+            "image": "./Images/Smell.png"
+        },
+        {
+            "text": "See",
+            "image": "./Images/See.png"
+        },
+        {
+            "text": "Feel",
+            "image": "./Images/Feel.png"
+        },
+        {
+            "text": "Touch",
+            "image": "./Images/Touch.png"
+        },
+        {
+            "text": "Hear",
+            "image": "./Images/Hear.png"
+        },
+        {
+            "text": "Taste",
+            "image": "./Images/Taste.png"
+        },
+        {
+            "text": "Have",
+            "image": "./Images/Have.png"
+        },
+        {
+            "text": "Can't",
+            "image": "./Images/Cant.png"
+        },
+        {
+            "text": "Won't",
+            "image": "./Images/Wont.png"
+        },
+        {
+            "text": "Go",
+            "image": "./Images/Go.png"
+        },
+        {
+            "text": "Stay",
+            "image": "./Images/Stay.png"
+        }
+    ],
+    "Nouns": {
+        "Food/Drink": [
+            {
+                "text": "Milk",
+                "image": "./Images/Milk.png"
+            },
+            {
+                "text": "Water",
+                "image": "./Images/Water.png"
+            },
+            {
+                "text": "Cup",
+                "image": "./Images/Cup.png"
+            },
+            {
+                "text": "Sippy Cup",
+                "image": "./Images/SippyCup.png"
+            },
+            {
+                "text": "Plate",
+                "image": "./Images/Plate.png"
+            },
+            {
+                "text": "Bowl",
+                "image": "./Images/Bowl.png"
+            },
+            {
+                "text": "Bottle",
+                "image": "./Images/Bottle.png"
+            },
+            {
+                "text": "Fork",
+                "image": "./Images/Fork.png"
+            },
+            {
+                "text": "Knife",
+                "image": "./Images/Knife.png"
+            },
+            {
+                "text": "Spoon",
+                "image": "./Images/Spoon.png"
+            },
+            {
+                "text": "Straw",
+                "image": "./Images/Straw.png"
+            },
+            {
+                "text": "Chopsticks",
+                "image": "./Images/Chopsticks.png"
+            },
+            {
+                "text": "Sandwich",
+                "image": "./Images/Sandwich.png"
+            },
+            {
+                "text": "Hamburger",
+                "image": "./Images/Hamburger.png"
+            },
+            {
+                "text": "Spaghetti",
+                "image": "./Images/Spaghetti.png"
+            },
+            {
+                "text": "Noodles",
+                "image": "./Images/Noodles.png"
+            },
+            {
+                "text": "Nuggets",
+                "image": "./Images/Nuggets.png"
+            },
+            {
+                "text": "Mac & Cheese",
+                "image": "./Images/MacAndCheese.png"
+            },
+            {
+                "text": "Food",
+                "image": "./Images/Food.png"
+            },
+            {
+                "text": "Juice",
+                "image": "./Images/Juice.png"
+            },
+            {
+                "text": "Candy",
+                "image": "./Images/Candy.png"
+            },
+            {
+                "text": "Soda/Pop",
+                "image": "./Images/Soda.png"
+            },
+            {
+                "text": "Apple",
+                "image": "./Images/Apple.png"
+            },
+            {
+                "text": "Banana",
+                "image": "./Images/Banana.png"
+            },
+            {
+                "text": "Grapes",
+                "image": "./Images/Grapes.png"
+            },
+            {
+                "text": "Blueberries",
+                "image": "./Images/Blueberries.png"
+            },
+            {
+                "text": "Watermelon",
+                "image": "./Images/Watermelon.png"
+            },
+            {
+                "text": "Strawberries",
+                "image": "./Images/Strawberries.png"
+            },
+            {
+                "text": "Cherries",
+                "image": "./Images/Cherries.png"
+            },
+            {
+                "text": "Cookies",
+                "image": "./Images/Cookies.png"
+            },
+            {
+                "text": "Crackers",
+                "image": "./Images/Crackers.png"
+            },
+            {
+                "text": "Chips",
+                "image": "./Images/Chips.png"
+            },
+            {
+                "text": "Blackberries",
+                "image": "./Images/Blackberries.png"
+            },
+            {
+                "text": "Raspberries",
+                "image": "./Images/Raspberries.png"
+            },
+            {
+                "text": "Orange",
+                "image": "./Images/Orange.png"
+            },
+            {
+                "text": "Napkin/paper towel",
+                "image": "./Images/Napkin.png"
+            }
+        ],
+        "Household Items": [
+            {
+                "text": "Blanket",
+                "image": "./Images/Blanket.png"
+            },
+            {
+                "text": "Pillow",
+                "image": "./Images/Pillow.png"
+            },
+            {
+                "text": "Chair",
+                "image": "./Images/Chair.png"
+            },
+            {
+                "text": "Television",
+                "image": "./Images/Television.jpg"
+            },
+            {
+                "text": "Bed",
+                "image": "./Images/Bed.png"
+            },
+            {
+                "text": "Toilet",
+                "image": "./Images/Toilet.png"
+            },
+            {
+                "text": "Book",
+                "image": "./Images/Book.png"
+            },
+            {
+                "text": "Hairbrush",
+                "image": "./Images/Brush.png"
+            },
+            {
+                "text": "Toothbrush",
+                "image": "./Images/Toothbrush.png"
+            },
+            {
+                "text": "Soap",
+                "image": "./Images/Soap.png"
+            },
+            {
+                "text": "Table",
+                "image": "./Images/Table.png"
+            }
+        ],
+        "Clothing": {
+            "All Year": [
+                {
+                    "text": "Socks",
+                    "image": "./Images/Socks.png"
+                },
+                {
+                    "text": "Underwear",
+                    "image": "./Images/Underwear.png"
+                },
+                {
+                    "text": "Pajamas",
+                    "image": "./Images/Pajamas.png"
+                },
+                {
+                    "text": "Glasses",
+                    "image": "./Images/Glasses.png"
+                },
+                {
+                    "text": "Belt",
+                    "image": "./Images/Belt.png"
+                },
+                {
+                    "text": "Jewelry",
+                    "image": "./Images/Jewelry.png"
+                }
+            ],
+            "Summer": [
+                {
+                    "text": "Shoes",
+                    "image": "./Images/Shoes.png"
+                },
+                {
+                    "text": "Shorts",
+                    "image": "./Images/Shorts.png"
+                },
+                {
+                    "text": "Flip-Flops",
+                    "image": "./Images/FlipFlops.png"
+                },
+                {
+                    "text": "Sun-Glasses",
+                    "image": "./Images/SunGlasses.png"
+                },
+                {
+                    "text": "Bathing Suit",
+                    "image": "./Images/BathingSuit.png"
+                }
+            ],
+            "Fall/Spring": [
+                {
+                    "text": "Pants",
+                    "image": "./Images/Pants.png"
+                },
+                {
+                    "text": "Hat",
+                    "image": "./Images/Hat.png"
+                },
+                {
+                    "text": "Jacket",
+                    "image": "./Images/Jacket.png"
+                },
+                {
+                    "text": "Dress",
+                    "image": "./Images/Dress.png"
+                }
+            ],
+            "Winter": [
+                {
+                    "text": "Snow-Pants",
+                    "image": "./Images/SnowPants.png"
+
+                },
+                {
+                    "text": "Gloves/Mittens",
+                    "image": "./Images/GlovesMittens.png"
+
+                },
+                {
+                    "text": "Beanie",
+                    "image": "./Images/Beanie.png"
+
+                },
+                {
+                    "text": "Coat",
+                    "image": "./Images/Coat.png"
+
+                }
+            ]
+        },
+        "People": [
+            {
+                "text": "Mom",
+                "image": "./Images/Mom.png"
+
+            },
+            {
+                "text": "Dad",
+                "image": "./Images/Dad.png"
+
+            },
+            {
+                "text": "Grandma",
+                "image": "./Images/Grandman.png"
+
+            },
+            {
+                "text": "Grandpa",
+                "image": "./Images/Grandpa.png"
+
+            },
+            {
+                "text": "Aunt",
+                "image": "./Images/Aunt.png"
+
+            },
+            {
+                "text": "Uncle",
+                "image": "./Images/Uncle.png"
+
+            },
+            {
+                "text": "Cousin",
+                "image": "./Images/Cousin.png"
+
+            },
+            {
+                "text": "Brother",
+                "image": "./Images/Brother.png"
+
+            },
+            {
+                "text": "Sister",
+                "image": "./Images/Sister.png"
+
+            },
+            {
+                "text": "Teacher",
+                "image": "./Images/Teacher.png"
+
+            },
+            {
+                "text": "Babysitter",
+                "image": "./Images/BabySitter.png"
+
+            },
+            {
+                "text": "Bus Driver",
+                "image": "./Images/Busdriver.png"
+
+            },
+            {
+                "text": "Police Officer",
+                "image": "./Images/PoliceOfficer.png"
+
+            },
+            {
+                "text": "Doctor",
+                "image": "./Images/Doctor.png"
+
+            },
+            {
+                "text": "Fireman",
+                "image": "./Images/fireman.png"
+
+            },
+            {
+                "text": "Nurse",
+                "image": "./Images/Nurse.png"
+
+            },
+            {
+                "text": "Garbage Man",
+                "image": "./Images/GarbageMan.png"
+
+            },
+            {
+                "text": "Postman",
+                "image": "./Images/Postman.png"
+
+            },
+            {
+                "text": "Courier",
+                "image": "./Images/Courier.png"
+
+            },
+            {
+                "text": "Batman",
+                "image": "./Images/Batmnan.png"
+
+            },
+            {
+                "text": "SpiderMan",
+                "image": "./Images/Spiderman.png"
+
+            }
+        ],
+        "Places": [
+            {
+                "text": "Home",
+                "image": "./Images/Home.png"
+
+            },
+            {
+                "text": "School",
+                "image": "./Images/School.png"
+
+            },
+            {
+                "text": "Grandma's House",
+                "image": "./Images/GrandmasHouse.png"
+
+            },
+            {
+                "text": "Store",
+                "image": "./Images/Store.png"
+
+            },
+            {
+                "text": "Gas Station",
+                "image": "./Images/GasStation.png"
+
+            },
+            {
+                "text": "Hospital",
+                "image": "./Images/Hospital.png"
+
+            },
+            {
+                "text": "Bus Stop",
+                "image": "./Images/BusStop.png"
+
+            },
+            {
+                "text": "Park",
+                "image": "./Images/Park.png"
+
+            },
+            {
+                "text": "Restroom",
+                "image": "./Images/Restroom.png"
+
+            },
+            {
+                "text": "Bedroom",
+                "image": "./Images/Bedroom.png"
+
+            },
+            {
+                "text": "Kitchen",
+                "image": "./Images/Kitchen.png"
+
+            },
+            {
+                "text": "Basement",
+                "image": "./Images/Basement.png"
+
+            },
+            {
+                "text": "Target",
+                "image": "./Images/Target.png"
+
+            },
+            {
+                "text": "America",
+                "image": "./Images/America.png"
+
+            },
+            {
+                "text": "Backyard",
+                "image": "./Images/Backyard.png"
+
+            },
+            {
+                "text": "Outdoors",
+                "image": "./Images/Outdoors.png"
+
+            },
+            {
+                "text": "Indoors",
+                "image": "./Images/Indoors.png"
+
+            },
+            {
+                "text": "Beach",
+                "image": "./Images/Beach.png"
+
+            },
+            {
+                "text": "Lake",
+                "image": "./Images/Lake.png"
+
+            },
+            {
+                "text": "Restaurant",
+                "image": "./Images/Restaurant.png"
+
+            },
+            {
+                "text": "Fair/Carnival",
+                "image": "./Images/Carnival.png"
+
+            },
+            {
+                "text": "Mall",
+                "image": "./Images/Mall.png"
+
+            },
+            {
+                "text": "Train Station",
+                "image": "./Images/TrainStation.png"
+
+            },
+            {
+                "text": "Police Station",
+                "image": "./Images/PoliceStation.png"
+
+            },
+            {
+                "text": "Fire Station",
+                "image": "./Images/FireStation.png"
+
+            }
+        ],
+        "Animals": [
+            {
+                "text": "Dog",
+                "image": "./Images/Dog.png"
+
+            },
+            {
+                "text": "Cat",
+                "image": "./Images/Cat.png"
+
+            },
+            {
+                "text": "Bird",
+                "image": "./Images/Bird.png"
+
+            },
+            {
+                "text": "Chicken",
+                "image": "./Images/Chicken.png"
+
+            },
+            {
+                "text": "Turkey",
+                "image": "./Images/Turkey.png"
+
+            },
+            {
+                "text": "Pig",
+                "image": "./Images/Pig.png"
+
+            },
+            {
+                "text": "Cow",
+                "image": "./Images/Cow.png"
+
+            },
+            {
+                "text": "Moose",
+                "image": "./Images/Moose.png"
+
+            },
+            {
+                "text": "Deer",
+                "image": "./Images/Deer.png"
+
+            },
+            {
+                "text": "Goose",
+                "image": "./Images/Goose.png"
+
+            },
+            {
+                "text": "Duck",
+                "image": "./Images/Duck.png"
+
+            },
+            {
+                "text": "Lizard",
+                "image": "./Images/Lizard.png"
+
+            },
+            {
+                "text": "Snake",
+                "image": "./Images/Snake.png"
+
+            },
+            {
+                "text": "Koala",
+                "image": "./Images/Koala.png"
+
+            },
+            {
+                "text": "Kangaroo",
+                "image": "./Images/Kangaroo.png"
+
+            },
+            {
+                "text": "Bear",
+                "image": "./Images/Bear.png"
+
+            },
+            {
+                "text": "Elephant",
+                "image": "./Images/Elephant.png"
+
+            },
+            {
+                "text": "Tiger",
+                "image": "./Images/Tiger.png"
+
+            },
+            {
+                "text": "Lion",
+                "image": "./Images/Lion.png"
+
+            },
+            {
+                "text": "Monkey",
+                "image": "./Images/Monkey.png"
+
+            },
+            {
+                "text": "Mouse",
+                "image": "./Images/Mouse.png"
+
+            },
+            {
+                "text": "Horse",
+                "image": "./Images/Horse.png"
+
+            }
+        ]
+    },
+    "Emotions": [
+        {
+            "text": "Happy",
+            "image": "./Images/Happy.png"
+
+        },
+        {
+            "text": "Sad",
+            "image": "./Images/Sad.png"
+
+        },
+        {
+            "text": "Scared",
+            "image": "./Images/Scared.png"
+
+        },
+        {
+            "text": "Brave",
+            "image": "./Images/Brave.png"
+
+        },
+        {
+            "text": "Nervous",
+            "image": "./Images/Nervous.png"
+
+        },
+        {
+            "text": "Angry",
+            "image": "./Images/Angry.png"
+
+        },
+        {
+            "text": "Lonely",
+            "image": "./Images/Lonely.png"
+
+        },
+        {
+            "text": "Embarrassed",
+            "image": "./Images/Embarrassed.png"
+
+        },
+        {
+            "text": "Shy",
+            "image": "./Images/Shy.png"
+
+        },
+        {
+            "text": "Excitement",
+            "image": "./Images/Excitement.png"
+
+        },
+        {
+            "text": "Disappointment",
+            "image": "./Images/Disappointment.png"
+
+        },
+        {
+            "text": "Agreement",
+            "image": "./Images/Agreement.png"
+
+        },
+        {
+            "text": "Disagreement",
+            "image": "./Images/Disagreement.png"
+
+        },
+        {
+            "text": "Surprise",
+            "image": "./Images/Surprise.png"
+
+        },
+        {
+            "text": "Curious",
+            "image": "./Images/Curious.png"
+
+        },
+        {
+            "text": "Bored",
+            "image": "./Images/Bored.png"
+
+        },
+        {
+            "text": "Uncomfortable",
+            "image": "./Images/Uncomfortable.png"
+
+        }
+    ],
+    "Feelings": [
+        {
+            "text": "Sick",
+            "image": "./Images/Sick.png"
+
+        },
+        {
+            "text": "Tired",
+            "image": "./Images/Tired.png"
+
+        },
+        {
+            "text": "Sleepy",
+            "image": "./Images/Sleepy.png"
+
+        },
+        {
+            "text": "Well",
+            "image": "./Images/Well.png"
+
+        },
+        {
+            "text": "Discomfort",
+            "image": "./Images/Discomfort.png"
+
+        }
+    ],
+    "Activities": [
+        {
+            "text": "Play",
+            "image": "./Images/Play.png"
+
+        },
+        {
+            "text": "Baseball",
+            "image": "./Images/Baseball.png"
+
+        },
+        {
+            "text": "Football",
+            "image": "./Images/Football.png"
+
+        },
+        {
+            "text": "Basketball",
+            "image": "./Images/Basketball.png"
+
+        },
+        {
+            "text": "Soccer",
+            "image": "./Images/Soccer.png"
+
+        },
+        {
+            "text": "Hockey",
+            "image": "./Images/Hockey.png"
+
+        },
+        {
+            "text": "Run",
+            "image": "./Images/Run.png"
+
+        },
+        {
+            "text": "Jump",
+            "image": "./Images/Jump.png"
+
+        },
+        {
+            "text": "Climb",
+            "image": "./Images/Climb.png"
+
+        },
+        {
+            "text": "Sing",
+            "image": "./Images/Sing.png"
+
+        },
+        {
+            "text": "Dance",
+            "image": "./Images/Dance.png"
+
+        },
+        {
+            "text": "Exercise",
+            "image": "./Images/Exercise.png"
+
+        },
+        {
+            "text": "Sleep",
+            "image": "./Images/Sleep.png"
+
+        },
+        {
+            "text": "Sit",
+            "image": "./Images/Sit.png"
+
+        },
+        {
+            "text": "Stand",
+            "image": "./Images/Stand.png"
+
+        },
+        {
+            "text": "Lie Down",
+            "image": "./Images/LieDown.png"
+
+        },
+        {
+            "text": "Walk",
+            "image": "./Images/Walk.png"
+
+        },
+        {
+            "text": "Read",
+            "image": "./Images/Read.png"
+
+        },
+        {
+            "text": "Watch",
+            "image": "./Images/Watch.png"
+
+        },
+        {
+            "text": "Write",
+            "image": "./Images/Write.png"
+
+        },
+        {
+            "text": "Learn",
+            "image": "./Images/Learn.png"
+
+        },
+        {
+            "text": "Talk",
+            "image": "./Images/Talk.png"
+
+        },
+        {
+            "text": "Clean",
+            "image": "./Images/Clean.png"
+
+        },
+        {
+            "text": "Joke",
+            "image": "./Images/Joke.png"
+
+        },
+        {
+            "text": "Cry",
+            "image": "./Images/Cry.png"
+
+        },
+        {
+            "text": "Guitar",
+            "image": "./Images/Guitar.png"
+
+        }
+    ],
+    "Colors": [
+        {
+            "text": "Red",
+            "image": "./Images/Red.png"
+
+        },
+        {
+            "text": "Blue",
+            "image": "./Images/Blue.png"
+
+        },
+        {
+            "text": "Yellow",
+            "image": "./Images/Yellow.png"
+
+        },
+        {
+            "text": "Green",
+            "image": "./Images/Green.png"
+
+        },
+        {
+            "text": "Purple",
+            "image": "./Images/Purple.png"
+
+        },
+        {
+            "text": "Orange",
+            "image": "./Images/ColorOrange.png"
+
+        },
+        {
+            "text": "Black",
+            "image": "./Images/Black.png"
+
+        },
+        {
+            "text": "White",
+            "image": "./Images/White.png"
+
+        },
+        {
+            "text": "Pink",
+            "image": "./Images/Pink.png"
+
+        },
+        {
+            "text": "Gold",
+            "image": "./Images/Gold.png"
+
+        },
+        {
+            "text": "Brown",
+            "image": "./Images/Brown.png"
+
+        },
+        {
+            "text": "Grey/Gray",
+            "image": "./Images/Grey.png"
+
+        }
+    ],
+    "Nature": [
+        {
+            "text": "Tree",
+            "image": "./Images/Tree.png"
+
+        },
+        {
+            "text": "Grass",
+            "image": "./Images/Grass.png"
+
+        },
+        {
+            "text": "Plants",
+            "image": "./Images/Plants.png"
+
+        },
+        {
+            "text": "Flowers",
+            "image": "./Images/Flowers.png"
+
+        },
+        {
+            "text": "Sky",
+            "image": "./Images/Sky.png"
+
+        },
+        {
+            "text": "Ground",
+            "image": "./Images/Ground.png"
+
+        },
+        {
+            "text": "Dirt",
+            "image": "./Images/Dirt.png"
+
+        },
+        {
+            "text": "Air",
+            "image": "./Images/Air.png"
+        },
+        {
+            "text": "Fire",
+            "image": "./Images/Fire.png"
+
+        },
+        {
+            "text": "Wind",
+            "image": "./Images/Wind.png"
+
+        }
+    ],
+    "Seasons": [
+        {
+            "text": "Spring",
+            "image": "./Images/Spring.png"
+
+        },
+        {
+            "text": "Summer",
+            "image": "./Images/Summer.png"
+
+        },
+        {
+            "text": "Fall/Autumn",
+            "image": "./Images/Autumn.png"
+
+        },
+        {
+            "text": "Winter",
+            "image": "./Images/Winter.png"
+
+        }
+    ],
+    "Weather": [
+        {
+            "text": "Hot",
+            "image": "./Images/Hot.png"
+
+        },
+        {
+            "text": "Humid",
+            "image": "./Images/Humid.png"
+
+        },
+        {
+            "text": "Rain",
+            "image": "./Images/Rain.png"
+
+        },
+        {
+            "text": "Snow",
+            "image": "./Images/Snow.png"
+
+        }
+    ],
+    "Vehicles": [
+        {
+            "text": "Car",
+            "image": "./Images/Car.png"
+
+        },
+        {
+            "text": "Truck",
+            "image": "./Images/Truck.png"
+
+        },
+        {
+            "text": "Bus",
+            "image": "./Images/Bus.png"
+
+        },
+        {
+            "text": "Train",
+            "image": "./Images/Train.png"
+
+        },
+        {
+            "text": "Bicycle",
+            "image": "./Images/Bicycle.png"
+
+        },
+        {
+            "text": "Motorcycle",
+            "image": "./Images/Motorcycle.png"
+
+        },
+        {
+            "text": "Airplane",
+            "image": "./Images/Airplane.png"
+
+        },
+        {
+            "text": "Boat",
+            "image": "./Images/Boat.png"
+
+        }
+    ],
+    "Technology": [
+        {
+            "text": "Computer",
+            "image": "./Images/Computer.png"
+
+        },
+        {
+            "text": "Tablet",
+            "image": "./Images/Tablet.png"
+
+        },
+        {
+            "text": "Cell Phone",
+            "image": "./Images/CellPhone.png"
+
+        },
+        {
+            "text": "Video Game",
+            "image": "./Images/VideoGame.png"
+
+        },
+        {
+            "text": "Headphones",
+            "image": "./Images/Headphones.png"
+
+        },
+        {
+            "text": "Camera",
+            "image": "./Images/Camera.png"
+
+        },
+        {
+            "text": "Printer",
+            "image": "./Images/Printer.png"
+
+        },
+        {
+            "text": "Smart Watch",
+            "image": "./Images/SmartWatch.png"
+        }
+    ]
+}
