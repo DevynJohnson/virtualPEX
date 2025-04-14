@@ -17,6 +17,10 @@ return (
             <Navbar.Brand>Virtual PEX</Navbar.Brand>
             <Nav variant="tabs" className="me-auto mx-auto">
                 <Nav.Link as={Link} to="/" active={currentPage === "/"}>Home</Nav.Link>
+
+                <Nav.Link as={Link} to="/colors" active={currentPage === "/colors"}>Colors</Nav.Link>
+
+                <Nav.Link as={Link} to="/people" active={currentPage === "/people"}>People</Nav.Link>
                 
                 <Nav.Link as={Link} to="/food" active={currentPage === "/food"}>Food and Drinks</Nav.Link>
 
