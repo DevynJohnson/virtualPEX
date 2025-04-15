@@ -1,0 +1,2 @@
+buildCommand=npm run render-build
+startCommand=node virtualPEX/server/server.js
