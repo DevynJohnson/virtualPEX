@@ -13,7 +13,7 @@
     "client:dev": "cd virtualPEX/client && npm run dev",
     "build": "cd virtualPEX/client && npm run build",
     "seed": "cd virtualPEX/server && npm run seed",
-    "render-build": "npm install && npm run build"
+    "render-build": "cd virtualPEX/server && npm install && cd ../client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
