@@ -71,4 +71,21 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// GET items by category
+router.get('/category/:categoryName', async (req, res) => {
+    try {
+        const categoryParam = req.params.categoryName;
+        const items = await Item.find({ category: categoryParam });
+
+        if (!items.length) {
+            return res.status(404).json({ message: `No items found in category: ${categoryParam}` });
+        }
+
+        res.json(items);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Failed to retrieve items by category.', error: error.message });
+    }
+});
+
 export default router;
