@@ -353,8 +353,7 @@
                 "image": "../public/Assets/Images/Table.png"
             }
         ],
-        "Clothing": {
-            "All Year": [
+        "Clothing": [
                 {
                     "text": "Socks",
                     "image": "../public/Assets/Images/Socks.png"
@@ -378,9 +377,7 @@
                 {
                     "text": "Jewelry",
                     "image": "../public/Assets/Images/Jewelry.png"
-                }
-            ],
-            "Summer": [
+                },
                 {
                     "text": "Shoes",
                     "image": "../public/Assets/Images/Shoes.png"
@@ -400,9 +397,7 @@
                 {
                     "text": "Bathing Suit",
                     "image": "../public/Assets/Images/BathingSuit.png"
-                }
-            ],
-            "Fall/Spring": [
+                },
                 {
                     "text": "Pants",
                     "image": "../public/Assets/Images/Pants.png"
@@ -417,10 +412,8 @@
                 },
                 {
                     "text": "Dress",
-                    "image": "../public/Assets/Images/Dress.png"
-                }
-            ],
-            "Winter": [
+                    "image": "../public/Assets/Images/Dress.jpg"
+                },
                 {
                     "text": "Snow-Pants",
                     "image": "../public/Assets/Images/SnowPants.png"
@@ -788,8 +781,74 @@
                 "image": "../public/Assets/Images/Horse.png"
 
             }
-        ]
-    },
+        ],
+        "Body Parts": [
+            {
+                "text": "Head",
+                "image": "../public/Assets/Images/Head.png"
+
+            },
+            {
+                "text": "Face",
+                "image": "../public/Assets/Images/Face.png"
+
+            },
+            {
+                "text": "Eyes",
+                "image": "../public/Assets/Images/Eyes.png"
+
+            },
+            {
+                "text": "Ears",
+                "image": "../public/Assets/Images/Ears.png"
+
+            },
+            {
+                "text": "Nose",
+                "image": "../public/Assets/Images/Nose.png"
+
+            },
+            {
+                "text": "Mouth",
+                "image": "../public/Assets/Images/Mouth.png"
+
+            },
+            {
+                "text": "Teeth",
+                "image": "../public/Assets/Images/Teeth.png"
+
+            },
+            {
+                "text": "Tongue",
+                "image": "../public/Assets/Images/Tongue.png"
+
+            },
+            {
+                "text": "Hands",
+                "image": "../public/Assets/Images/Hands.png"
+
+            },
+            {
+                "text": "Fingers",
+                "image": "../public/Assets/Images/Fingers.png"
+
+            },
+            {
+                "text": "Arms",
+                "image": "../public/Assets/Images/Arms.png"
+
+            },
+            {
+                "text": "Legs",
+                "image": "../public/Assets/Images/Legs.png"
+
+            },
+            {
+                "text": "Feet",
+                "image": "../public/Assets/Images/Feet.png"
+
+            }
+        ],
     "Emotions": [
         {
             "text": "Happy",
