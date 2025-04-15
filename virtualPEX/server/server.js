@@ -29,9 +29,9 @@ app.use(cors({
 
 // Serve static frontend files for production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client')));  // Serving the 'client' folder
+  app.use(express.static(path.join(__dirname, '../client/dist')));  // Serving the 'client' folder
   app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../client', 'index.html')); // Serve index.html from 'client'
+    res.sendFile(path.join(__dirname, '../client/dist', 'index.html')); // Serve index.html from 'client'
   });
 }
 
