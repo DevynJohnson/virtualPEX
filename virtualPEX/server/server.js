@@ -23,15 +23,15 @@ connectToDatabase();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: ["http://localhost:5173", "https://virtualpex.onrender.com"],
   credentials: true,
 }));
 
 // Serve static frontend files for production
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../../client')));  // Serving the 'client' folder
-  app.get('*', (_req, res) => {
-    res.sendFile(path.join(__dirname, '../../client', 'index.html')); // Serve index.html from 'client'
+  app.use(express.static(path.join(__dirname, '../client/dist')));  // Serving the 'client' folder
+  app.get(/(.*)/, (_req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist', 'index.html')); // Serve index.html from 'client'
   });
 }
 

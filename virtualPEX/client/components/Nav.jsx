@@ -45,6 +45,7 @@ const NavTabs = () => {
           )}
         </BsNav>
       </Container>
+
     </Navbar>
   );
 };

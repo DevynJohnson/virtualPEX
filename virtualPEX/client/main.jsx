@@ -15,6 +15,8 @@ import Food from './pages/Food.jsx';
 import Clothing from './pages/Clothing.jsx';
 import Household from './pages/Household.jsx';
 import Toys from './pages/Toys.jsx';
+import Colors from './pages/Colors.jsx';
+import People from './pages/People.jsx';
 
 // Define routes for the application
 const router = createBrowserRouter([
@@ -29,7 +31,9 @@ const router = createBrowserRouter([
       { path: 'food', element: <Food /> },
       { path: 'clothing', element: <Clothing /> },
       { path: 'household', element: <Household /> },
-      { path: 'toys', element: <Toys /> },
+      { path: 'toys', element: <Toys />},
+      { path: 'colors', element: <Colors />},
+      { path: 'people', element: <People />}
     ],
   },
 ]);
