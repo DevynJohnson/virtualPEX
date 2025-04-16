@@ -1,61 +1,63 @@
+// client/utils/auth.js
 import { jwtDecode } from 'jwt-decode';
 
 class AuthService {
-  // Get the user's profile from the token
+  // Retrieve and decode the stored token
   getProfile() {
     try {
       const token = this.getToken();
       if (!token) return null;
-      return jwtDecode(token); // Decode the token and return the profile
+      return jwtDecode(token);
     } catch (err) {
       console.error('Error decoding token:', err);
       return null;
     }
   }
 
-  // Check if user is logged in
+  // Check if the user is logged in by verifying token existence and validity
   loggedIn() {
     const token = this.getToken();
-    return !!token && !this.isTokenExpired(token); // Check if token exists and is not expired
+    return !!token && !this.isTokenExpired(token);
   }
 
-  // Check if the token is expired
+  // Check token expiration
   isTokenExpired(token) {
     try {
-      const decoded = jwtDecode(token); // Decode the token
-      return decoded?.exp && decoded.exp < Date.now() / 1000; // Expired check
+      const decoded = jwtDecode(token);
+      // Expiration is in seconds, so divide Date.now() by 1000
+      return decoded?.exp && decoded.exp < Date.now() / 1000;
     } catch (err) {
       console.error('Error checking token expiration:', err);
-      return true; // Return true if token is invalid or expired
+      return true;
     }
   }
 
-  // Get token from localStorage
+  // Retrieve token from localStorage
   getToken() {
     return localStorage.getItem('id_token');
   }
 
-  // Save token to localStorage and redirect to home page
+  // Log in by saving the token and redirecting to home
   login(idToken) {
     try {
-      localStorage.setItem('id_token', idToken); // Save token to localStorage
-      window.location.assign('/'); // Redirect to home page
+      localStorage.setItem('id_token', idToken);
+      window.location.assign('/');
     } catch (err) {
-      console.error('Error saving token to localStorage:', err);
+      console.error('Error saving token:', err);
     }
   }
 
-  // Remove token from localStorage and reload the page
+  // Log out by removing the token and redirecting
   logout() {
     try {
-      localStorage.removeItem('id_token'); // Remove token from localStorage
-      window.location.href = '/'; // Redirect to home page
+      localStorage.removeItem('id_token');
+      window.location.href = '/';
     } catch (err) {
-      console.error('Error removing token from localStorage:', err);
+      console.error('Error removing token:', err);
     }
   }
 
-  // Automatically check if the user is authenticated on page load
+  // Check authentication status on page load (optional)
   checkAuthOnPageLoad() {
     if (this.loggedIn()) {
       console.log('User is logged in');

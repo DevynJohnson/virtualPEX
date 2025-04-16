@@ -1,8 +1,9 @@
+// client/main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import './App.css'
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App.jsx';
@@ -15,6 +16,7 @@ import Clothing from './pages/Clothing.jsx';
 import Household from './pages/Household.jsx';
 import Toys from './pages/Toys.jsx';
 
+// Define routes for the application
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       { path: 'food', element: <Food /> },
       { path: 'clothing', element: <Clothing /> },
       { path: 'household', element: <Household /> },
-      { path: 'toys', element: <Toys />},
+      { path: 'toys', element: <Toys /> },
     ],
   },
 ]);
