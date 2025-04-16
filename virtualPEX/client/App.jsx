@@ -1,9 +1,10 @@
+// client/App.jsx
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavTabs from './components/Nav.jsx';
 import './App.css';
 
 function App() {
-
   return (
     <>
       <NavTabs />
@@ -11,7 +12,7 @@ function App() {
         <Outlet />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,8 +1,9 @@
+// client/main.jsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import './App.css'
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import App from './App.jsx';
@@ -17,6 +18,7 @@ import Toys from './pages/Toys.jsx';
 import Colors from './pages/Colors.jsx';
 import People from './pages/People.jsx';
 
+// Define routes for the application
 const router = createBrowserRouter([
   {
     path: '/',

@@ -1,19 +1,23 @@
+// client/pages/Login.jsx
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  // State variables for form fields and error messages
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate(); // Use this to navigate after login
+  const navigate = useNavigate();
+
+  // Use environment variable for API URL if available
   const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
+  // Submit handler to log in the user
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Reset error before each submit
+    setError('');
 
-    // Basic validation
     if (!email || !password) {
       setError('Please fill in both fields');
       return;
@@ -22,25 +26,21 @@ const Login = () => {
     try {
       const response = await fetch(`${API_BASE_URL}/users/login`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       });
-
       const data = await response.json();
 
       if (response.ok) {
-        // Successful login, store the token and navigate to a protected route (e.g., home)
-        localStorage.setItem('id_token', data.token); // Store the token in localStorage
+        // Store token and navigate to Home
+        localStorage.setItem('id_token', data.token);
         console.log('Login successful', data);
-        navigate('/'); // Redirect to home page after login
+        navigate('/');
       } else {
-        // Show error message
         setError(data.message || 'Something went wrong during login');
       }
-    } catch (error) {
-      console.error('Error logging in:', error);
+    } catch (err) {
+      console.error('Error logging in:', err);
       setError('An error occurred while logging in. Please try again later.');
     }
   };
@@ -50,9 +50,7 @@ const Login = () => {
       <Row className="w-100">
         <Col md={6} className="mx-auto">
           <h2 className="text-center mb-4">Login</h2>
-          
           {error && <Alert variant="danger">{error}</Alert>}
-
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formEmail" className="mb-3">
               <Form.Label>Email Address</Form.Label>
@@ -64,7 +62,6 @@ const Login = () => {
                 required
               />
             </Form.Group>
-
             <Form.Group controlId="formPassword" className="mb-3">
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -75,16 +72,13 @@ const Login = () => {
                 required
               />
             </Form.Group>
-
             <Button variant="primary" type="submit">
               Login
             </Button>
           </Form>
-
           <div className="mt-3 text-center">
             <p>
-              Don't have an account?{' '}
-              <Link to="/signup">Create a new one here.</Link>
+              Don't have an account? <Link to="/signup">Create a new one here.</Link>
             </p>
           </div>
         </Col>
