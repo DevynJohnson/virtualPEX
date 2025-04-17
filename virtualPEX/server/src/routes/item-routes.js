@@ -98,6 +98,20 @@ router.get('/:id', async (req, res) => {
     }
 });
 
+// GET a single item by name
+router.get('/name/:name', async (req, res) => {
+    try {
+        const item = await Item.findOne({ name: new RegExp(`^${req.params.name}$`, 'i') });
+        if (!item) {
+            return res.status(404).json({ message: 'Item not found.'});
+        }
+        res.json(item);
+    } catch(error) {
+        console.error(error);
+        res.status(500).json({ message: 'Failed to retrieve item.', error: error.message })
+}
+});
+
 // GET items by category
 router.get('/category/:categoryName', async (req, res) => {
     try {
