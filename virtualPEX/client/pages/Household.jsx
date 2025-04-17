@@ -1,15 +1,23 @@
-// client/pages/Household.jsx
 import React from 'react';
+import TopRow from '../components/TopRow';
+import ItemsGrid from '../components/ItemsGrid';
+
+const householdItems = [
+  { id: 1, imageUrl: '/assets/images/cup.png',    altText: 'Cup',    audio: '/assets/audio/cup.mp3'     },
+  { id: 2, imageUrl: '/assets/images/soap.png',   altText: 'Soap',   audio: '/assets/audio/soap.mp3'    },
+  // …add more household items here
+];
 
 const Household = () => {
+  const handleItemClick = item => new Audio(item.audio).play();
+
   return (
     <div>
-      <h1>Household Item Cards</h1>
-      {/* Render household item cards/components here */}
+      <TopRow onItemClick={handleItemClick} />
+      <h1>Household Items</h1>
+      <ItemsGrid items={householdItems} onItemClick={handleItemClick} />
     </div>
   );
 };
 
 export default Household;
-// This component serves as a placeholder for the household items section of the application. It can be expanded to include specific cards or components related to household items, similar to the Food and Clothing components.
-// The Household component is simple and can be styled further using CSS or styled-components as needed. It currently displays a heading and can be expanded to include more features, such as a list of household items or a shopping cart functionality.
