@@ -43,6 +43,33 @@ router.put('/:id', async (req, res) => {
     }
 });
 
+// PUT update a category of items
+router.put('/category/:categoryName', async (req, res) => {
+    try {
+        const filter = { category: req.params.categoryName };
+        const update = req.body;
+
+        const result = await Item.updateMany(filter, update, {
+            runValidators: true,
+        });
+
+        if (result.modifiedCount === 0) {
+            return res.status(404).json({ message: 'No items found with that category.' });
+        }
+
+        res.json({
+            message: `Successfully updated ${result.modifiedCount} item(s).`,
+            result,
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(400).json({
+            message: 'Failed to update items.',
+            error: error.message,
+        });
+    }
+});
+
 // DELETE an item by ID
 router.delete('/:id', async (req, res) => {
     try {

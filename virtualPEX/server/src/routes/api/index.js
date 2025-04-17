@@ -5,6 +5,6 @@ import itemRoutes from './item-routes.js';
 const router = express.Router();
 
 router.use('/users', userRoutes);
-router.use('/items', itemRoutes)
+router.use('/items', itemRoutes);
 
 export default router;

@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Signup = () => {
   // State variables for form fields and errors
   const [email, setEmail] = useState('');
-  const [username, setUsername] = useState('');
+  const [childName, setChildName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const Signup = () => {
     e.preventDefault();
     setError('');
 
-    if (!email || !username || !password) {
+    if (!email || !childName || !password) {
       setError('Please fill in all fields');
       return;
     }
@@ -26,7 +26,7 @@ const Signup = () => {
       const response = await fetch(`${API_BASE_URL}/users/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, username, password }),
+        body: JSON.stringify({ email, childName, password }),
       });
    
       const data = await response.json().catch(() => ({}));
@@ -62,13 +62,13 @@ const Signup = () => {
                 required
               />
             </Form.Group>
-            <Form.Group controlId="formUsername" className="mb-3">
-              <Form.Label>Username</Form.Label>
+            <Form.Group controlId="formchildName" className="mb-3">
+              <Form.Label>Child's Name</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Create a username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                placeholder="What is your child's name?"
+                value={childName}
+                onChange={(e) => setChildName(e.target.value)}
                 required
               />
             </Form.Group>
@@ -76,7 +76,7 @@ const Signup = () => {
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
-                placeholder="Enter your password"
+                placeholder="Create your password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
