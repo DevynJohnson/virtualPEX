@@ -35,6 +35,12 @@ const NavTabs = () => {
           <BsNav.Link as={Link} to="/toys" active={currentPage === '/toys'}>
             Toys and Games
           </BsNav.Link>
+          <BsNav.Link as={Link} to="/colors" active={currentPage === '/colors'}>
+            Colors
+          </BsNav.Link>
+          <BsNav.Link as={Link} to="/people" active={currentPage === '/people'}>
+            People
+          </BsNav.Link>
           {/* Show login if no user, otherwise show logout */}
           {!user ? (
             <BsNav.Link as={Link} to="/login" active={currentPage === '/login'}>
