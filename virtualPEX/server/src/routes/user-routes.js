@@ -37,7 +37,7 @@ router.post('/login', async (req, res) => {
 // Post Signup route - creates a new user
 router.post('/signup', async (req, res) => {
   try {
-    const user = await User.create(req.body); // Make sure req.body contains { email, password, username }
+    const user = await User.create(req.body); // Make sure req.body contains { email, password, childName }
     const token = signToken(user);
     res.json({ token, user });
   } catch (error) {
