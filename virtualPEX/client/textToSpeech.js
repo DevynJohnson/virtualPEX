@@ -4,7 +4,7 @@ export const getTTSAudio = async (text, voiceId) => {
         const options = {
             method: 'POST',
             headers: {
-                Authorization: `Bearer ${import.meta.env.VITE_SPEECHIFY_API_KEY || 'grtFWSCfg5rH61kYBXb8X1Lk1CjxfmddF5MWuPa1Kks='}`,
+                Authorization: `Bearer ${import.meta.env.VITE_SPEECHIFY_API_KEY /* || 'grtFWSCfg5rH61kYBXb8X1Lk1CjxfmddF5MWuPa1Kks='*/}`,
                 'Content-Type': 'application/json',
                 'Accept': 'audio/mpeg'
             },
