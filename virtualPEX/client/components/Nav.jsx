@@ -32,8 +32,8 @@ const NavTabs = () => {
           <BsNav.Link as={Link} to="/household" active={currentPage === '/household'}>
             Household Items
           </BsNav.Link>
-          <BsNav.Link as={Link} to="/toys" active={currentPage === '/toys'}>
-            Toys and Games
+          <BsNav.Link as={Link} to="/animals" active={currentPage === '/animals'}>
+            Animals
           </BsNav.Link>
           <BsNav.Link as={Link} to="/colors" active={currentPage === '/colors'}>
             Colors

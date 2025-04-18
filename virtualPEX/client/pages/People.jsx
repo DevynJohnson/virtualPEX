@@ -1,6 +1,12 @@
+import React from 'react';
+import PeopleGrid from '../components/PeopleGrid.jsx'
 const People = () => {
     return (
-        <h1>People Cards</h1>
+        <div>
+        <h1>People</h1>
+        <PeopleGrid />
+        </div>
+
     )
 }
 

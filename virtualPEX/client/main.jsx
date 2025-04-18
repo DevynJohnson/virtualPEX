@@ -14,7 +14,7 @@ import ErrorPage from './pages/Error.jsx';
 import Food from './pages/Food.jsx';
 import Clothing from './pages/Clothing.jsx';
 import Household from './pages/Household.jsx';
-import Toys from './pages/Toys.jsx';
+import Animals from './pages/Animals.jsx';
 import Colors from './pages/Colors.jsx';
 import People from './pages/People.jsx';
 
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       { path: 'food', element: <Food /> },
       { path: 'clothing', element: <Clothing /> },
       { path: 'household', element: <Household /> },
-      { path: 'toys', element: <Toys />},
+      { path: 'animals', element: <Animals />},
       { path: 'colors', element: <Colors />},
       { path: 'people', element: <People />}
     ],

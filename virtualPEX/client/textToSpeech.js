@@ -1,48 +1,43 @@
-// Authorization: Bearer <SPEECHIFY_API_KEY>
-import fetch from 'node-fetch';
-import dotenv from 'dotenv';
-dotenv.config();
-
 export const getTTSAudio = async (text, voiceId) => {
     try {
-        const url = 'https://api.speechify.com/v1/audio/speech';
+        const url = 'https://api.sws.speechify.com/v1/audio/stream';
         const options = {
             method: 'POST',
             headers: {
-                Authorization: `Bearer ${process.env.SPEECHIFY_API_KEY}`,
+                Authorization: `Bearer ${import.meta.env.VITE_SPEECHIFY_API_KEY || 'grtFWSCfg5rH61kYBXb8X1Lk1CjxfmddF5MWuPa1Kks='}`,
                 'Content-Type': 'application/json',
                 'Accept': 'audio/mpeg'
             },
             body: JSON.stringify({
                 input: text,
-                voice_id: voice_Id
+                voice_id: voiceId
             })
         };
         const response = await fetch(url, options);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
-        return data.audio_data; // Assuming the API returns audio data in this field
+        // Get the blob directly from the response
+        const audioBlob = await response.blob();
+        return audioBlob;
     } catch (error) {
         console.error('Error:', error);
         throw error; // Re-throw the error for further handling if needed
     }
 }
 // This function is used to play the audio data returned from the TTS API
-export const playAudio = async (audioData) => {
+export const playAudio = async (audioBlob) => {
     try {
-        const audio = new Audio(audioData);
-        audio.play();
+        // Create a URL for the blob
+        const audioUrl = URL.createObjectURL(audioBlob);
+        // Create and play the audio
+        const audio = new Audio(audioUrl);
+        // Clean up the URL object when done
+        audio.onended = () => {
+            URL.revokeObjectURL(audioUrl);
+        };
+        await audio.play();
     } catch (error) {
         console.error('Error playing audio:', error);
     }
 }
-
-/*
-// Example usage of the getTTSAudio function
-const text = "Hello, this is a test message.";
-const voiceId = "your_voice_id"; // Replace with the desired voice ID  
-
-playAudio(getTTSAudio(text, voiceId)))
-*/

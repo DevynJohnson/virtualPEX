@@ -116,7 +116,7 @@ router.get('/name/:name', async (req, res) => {
 router.get('/category/:categoryName', async (req, res) => {
     try {
         const categoryParam = req.params.categoryName;
-        const items = await Item.find({ category: categoryParam });
+        const items = await Item.find({ category: new RegExp(`^${categoryParam}$`, 'i') });
 
         if (!items.length) {
             return res.status(404).json({ message: `No items found in category: ${categoryParam}` });
