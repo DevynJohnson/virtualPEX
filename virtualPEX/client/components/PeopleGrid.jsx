@@ -15,8 +15,8 @@ const PeopleGrid = () => {
         const data = await res.json();
         setPeople(data);
       } catch (err) {
-        console.error('Failed to load colors:', err);
-        setError('Could not fetch color items.');
+        console.error('Failed to load people:', err);
+        setError('Could not fetch people items.');
       } finally {
         setLoading(false);
       }

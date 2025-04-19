@@ -15,8 +15,8 @@ const ClothingGrid = () => {
         const data = await res.json();
         setClothing(data);
       } catch (err) {
-        console.error('Failed to load colors:', err);
-        setError('Could not fetch color items.');
+        console.error('Failed to load clothing:', err);
+        setError('Could not fetch clothing items.');
       } finally {
         setLoading(false);
       }

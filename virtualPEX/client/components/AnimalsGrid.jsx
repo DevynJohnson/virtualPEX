@@ -16,7 +16,7 @@ const AnimalsGrid = () => {
         setAnimals(data);
       } catch (err) {
         console.error('Failed to load animals:', err);
-        setError('Could not fetch color items.');
+        setError('Could not fetch animal items.');
       } finally {
         setLoading(false);
       }
