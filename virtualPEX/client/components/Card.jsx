@@ -27,6 +27,13 @@ const CardImage = styled.img`
   border-radius: 8px;
 `;
 
+const CardTitle = styled.h3`
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+`;
+
 const Card = ({ item, voiceId = 'henry' }) => {
   const { name, imageUrl } = item;
 
@@ -43,6 +50,7 @@ const Card = ({ item, voiceId = 'henry' }) => {
     <CardContainer>
       <CardButton onClick={handleClick} aria-label={`Speak ${name}`}>
         <CardImage src={imageUrl} alt={name} />
+        <CardTitle>{name}</CardTitle>
       </CardButton>
     </CardContainer>
   );
