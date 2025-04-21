@@ -12,7 +12,7 @@
 - [License](#license)
             
 ## Installation
-<p>This application does not require any installation, it is deployed on Render and can be accessed INSERT LIVE LINK HERE.</p>
+<p>This application does not require any installation, it is deployed on Render and can be accessed <a href="https://virtualpex.onrender.com/">here</a>.</p>
             
 ## Usage
 <p>This application is designed to be used by children to communicate their wants and needs using images. This is especially helpful for non-verbal or speech delayed children.</p>
