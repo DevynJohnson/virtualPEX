@@ -16,7 +16,7 @@ const FoodGrid = () => {
         setFood(data);
       } catch (err) {
         console.error('Failed to load food:', err);
-        setError('Could not fetch color items.');
+        setError('Could not fetch food items.');
       } finally {
         setLoading(false);
       }
