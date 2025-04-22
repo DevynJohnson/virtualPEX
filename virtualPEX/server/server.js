@@ -27,6 +27,10 @@ app.use(cors({
   credentials: true,
 }));
 
+// Define API routes
+app.use('/api/users', userRoutes);
+app.use('/api/items', itemRoutes);
+
 // Serve static frontend files for production
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/dist')));  // Serving the 'client' folder
@@ -34,10 +38,6 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
   });
 }
-
-// Define API routes
-app.use('/api/users', userRoutes);
-app.use('/api/items', itemRoutes);
 
 // Start server and log the current port
 app.listen(PORT, () => {
