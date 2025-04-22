@@ -11,7 +11,7 @@ const GridContainer = styled.div`
   padding: 1rem;
 `;
 
-const ItemsGrid = ({ items = [], onItemClick, voiceId = 'henry' }) => {
+const ItemsGrid = ({ items = [], onItemClick, voiceId = 'carly' }) => {
   const handleCardClick = async (item) => {
     if (onItemClick) {
       onItemClick(item);
