@@ -27,7 +27,7 @@ const Signup = () => {
       const response = await fetch(`${API_BASE_URL}/users/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, childName, password }),
+        body: JSON.stringify({ email, username, childName, password }),
       });
    
       const data = await response.json().catch(() => ({}));
