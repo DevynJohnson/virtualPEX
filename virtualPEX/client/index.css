@@ -1,56 +1,230 @@
-/* client/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
 
-/* Reset margins, paddings, box‑sizing */
+/* Base reset and global styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Force a white background & black text everywhere */
 html, body, #root {
-  background-color: #ffffff;  /* full white */
-  color: #000000;             /* default text black */
-  min-height: 100vh;          /* let it scroll */
+  background-color: #f0f8ff;
+  color: #1a1a1a;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.6;
+  min-height: 100vh;
   width: 100%;
-}
-
-/* Allow normal page scrolling */
-html, body {
   overflow: auto;
 }
 
-/* Global link & button styles (you can tweak as needed) */
+/* Typography */
+h1, h2, h3 {
+  color: #005f99;
+  margin-bottom: 0.5em;
+}
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Layout container */
+.container {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Buttons */
+button {
+  border: 2px solid #b0d4f1;
+  border-radius: 12px;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  background: #e1f5fe;
+  color: #004d66;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #cbeafc;
+  transform: scale(1.05);
+}
+button:focus {
+  outline: 4px solid #80deea;
+  outline-offset: 2px;
+}
+
+/* Links */
 a {
-  color: #646cff;
+  color: #005f99;
   text-decoration: none;
 }
 a:hover {
-  color: #535bf2;
+  color: #003f66;
 }
 
-button {
+/* Navbar */
+.navbar {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #7ecbff;
+  box-shadow: 0 4px 12px rgba(0, 95, 153, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  color: #005f99;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+.navbar-title:hover {
+  color: #003f66;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  color: #004d66;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #f9f9f9;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 2px;
+}
+.navbar-links a:hover,
+.navbar-links a:focus {
+  background: #f0faff;
+  color: #003344;
+}
+.navbar-links a:hover::after,
+.navbar-links a:focus::after {
+  width: 100%;
+  background-color: #a3d5f5;
+}
+.navbar-links a.active {
+  color: #005f99;
+}
+.navbar-links a.active::after {
+  width: 100%;
+  background-color: #7ecbff;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navbar-links a {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Tile styles */
+.tile {
+  background: #fff;
+  border: 3px solid #b0d4f1;
+  border-radius: 16px;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #005f99;
+  transition: transform 0.2s ease, background-color 0.3s ease;
   cursor: pointer;
-  transition: border-color 0.25s;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-button:hover {
-  border-color: #646cff;
+.tile:hover {
+  background-color: #dff6fd;
+  transform: scale(1.08);
 }
-button:focus {
-  outline: 4px auto -webkit-focus-ring-color;
+.tile:focus {
+  outline: 4px solid #80deea;
+}
+.tile.active {
+  animation: bounce 0.4s ease-in-out;
+  background-color: #b2ebf2;
 }
 
-/* Headings */
-h1 {
-  font-size: 3.2rem;
-  line-height: 1.2;
+/* Tile image */
+.tile img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  border: 4px solid #a3d5f5;
+  border-radius: 16px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 }
 
-/* You can keep or remove other styles below as you like */
+/* Bounce animation */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Assistive/help text */
+.assistive-text {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #444;
+  text-align: center;
+}
