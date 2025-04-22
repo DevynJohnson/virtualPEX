@@ -4,6 +4,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -46,4 +48,28 @@
 
 main {
   padding-top: 70px; /* adjust this to match your navbar’s height */
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Add these animations at the end of your CSS file */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
