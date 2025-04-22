@@ -1,11 +1,13 @@
 import React from 'react';
 import HouseholdGrid from '../components/HouseholdGrid.jsx';
+import TopRow from '../components/TopRow.jsx';
 
 
 const Household = () => {
   return (
     <div>
       <h1>Household Items</h1>
+      <TopRow />
       <HouseholdGrid />
     </div>
   );
