@@ -57,7 +57,7 @@ const CardTitle = styled.h3`
   word-break: break-word; // Breaks long words if needed
 `;
 
-const Card = ({ item, voiceId = 'henry' }) => {
+const Card = ({ item, voiceId = 'carly' }) => {
   const { name, imageUrl } = item;
 
   const handleClick = async () => {
