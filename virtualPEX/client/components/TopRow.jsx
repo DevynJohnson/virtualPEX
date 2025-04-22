@@ -5,8 +5,8 @@ import Card from './Card';
 const RowContainer = styled.div`
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(100px, auto);
-  gap: 1rem;
+  grid-auto-columns: minmax(230px, auto); // Increased minimum width to account for card width + margins
+  gap: 2rem; // Increased gap to prevent overlap
   padding: 1rem;
   overflow-x: auto;
 
@@ -29,9 +29,11 @@ const TopRow = ({ onItemClick = () => {} }) => (
     {coreItems.map(item => (
       <Card
         key={item.id}
-        imageUrl={item.imageUrl}
-        altText={item.altText}
-        onClick={() => onItemClick(item)}
+        item={{ 
+          name: item.altText, 
+          imageUrl: item.imageUrl 
+        }}
+        onItemClick={() => onItemClick(item)}
       />
     ))}
   </RowContainer>
