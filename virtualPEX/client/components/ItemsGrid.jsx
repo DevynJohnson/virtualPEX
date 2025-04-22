@@ -6,7 +6,7 @@ import { getTTSAudio, playAudio } from '../textToSpeech.js';
 
 const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   gap: 1rem;
   padding: 1rem;
 `;
