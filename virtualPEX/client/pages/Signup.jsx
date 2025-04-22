@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Signup = () => {
   // State variables for form fields and errors
   const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [childName, setChildName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -17,7 +18,7 @@ const Signup = () => {
     e.preventDefault();
     setError('');
 
-    if (!email || !childName || !password) {
+    if (!email || !username || !childName || !password) {
       setError('Please fill in all fields');
       return;
     }
@@ -26,7 +27,7 @@ const Signup = () => {
       const response = await fetch(`${API_BASE_URL}/users/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, childName, password }),
+        body: JSON.stringify({ email, username, childName, password }),
       });
    
       const data = await response.json().catch(() => ({}));
@@ -59,6 +60,16 @@ const Signup = () => {
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </Form.Group>
+            <Form.Group controlId="formUsername" className="mb-3">
+              <Form.Label>Username</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="Create Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 required
               />
             </Form.Group>
