@@ -5,8 +5,9 @@ import TopRow from '../components/TopRow.jsx';
 const Clothing = () => {
   return (
     <div>
-      <h1>Clothing</h1>
+      <h1>Common Words</h1>
       <TopRow />
+      <h1>Clothing</h1>
       <ClothingGrid />
     </div>
   );

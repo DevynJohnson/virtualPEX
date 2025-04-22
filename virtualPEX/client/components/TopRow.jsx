@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemsGrid from './ItemsGrid';
 
-const coreWordNames = ['I', 'You', 'See', 'Hear', 'Want', 'Yes', 'No'];
+const coreWordNames = ['I', 'You', 'See', 'Hear', 'Want', 'Yes', 'No', 'Stop', 'What', 'Toilet', 'Park', 'Sleepy'];
 
 const CoreWordsGrid = () => {
   const [coreItems, setCoreItems] = useState([]);
