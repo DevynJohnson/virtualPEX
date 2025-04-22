@@ -6,8 +6,9 @@ import TopRow from '../components/TopRow.jsx';
 const Household = () => {
   return (
     <div>
-      <h1>Household Items</h1>
+      <h1>Common Words</h1>
       <TopRow />
+      <h1>Household Items</h1>
       <HouseholdGrid />
     </div>
   );

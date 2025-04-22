@@ -5,8 +5,9 @@ import TopRow from '../components/TopRow.jsx';
 const Animals = () => {
   return (
     <div>
-      <h1>Animals</h1>
+      <h1>Common Words</h1>
       <TopRow />
+      <h1>Animals</h1>
       <AnimalsGrid />
     </div>
   );
