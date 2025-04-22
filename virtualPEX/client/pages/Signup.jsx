@@ -66,7 +66,7 @@ const Signup = () => {
             <Form.Group controlId="formUsername" className="mb-3">
               <Form.Label>Username</Form.Label>
               <Form.Control
-                type="email"
+                type="text"
                 placeholder="Create Username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
