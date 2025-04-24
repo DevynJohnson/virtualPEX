@@ -22,7 +22,11 @@
 
 <p>Here are a few screenshots that show the application in action (screenshots taken using iPad 9th Generation):</p>
 
+![screenshot of homepage](/virtualPEX/client/public/Assets/Images/screenshots/homeScreenshot.png)
 
+![screenshot of food](./virtualPEX/client/public/Assets/Images/screenshots/foodScreenshot.png)
+
+![screenshot of clothing](./virtualPEX/client/public/Assets/Images/screenshots/clothingScreenshot.png)
             
 ## Credits
 
