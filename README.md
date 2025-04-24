@@ -6,6 +6,7 @@
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Credits](#credits)
 - [Testing](#testing)
 - [Questions](#questions)
@@ -15,7 +16,13 @@
 <p>This application does not require any installation, it is deployed on Render and can be accessed <a href="https://virtualpex.onrender.com/">here</a>.</p>
             
 ## Usage
-<p>This application is designed to be used by children to communicate their wants and needs using images. This is especially helpful for non-verbal or speech delayed children.</p>
+<p>This application is designed to be used by children to communicate their wants and needs using images. This is especially helpful for non-verbal or speech delayed children. The application is ideally viewed on a tablet device, but has all of the same functionality on both computer and mobile devices as well.</p>
+
+## Screenshots
+
+<p>Here are a few screenshots that show the application in action (screenshots taken using iPad 9th Generation):</p>
+
+
             
 ## Credits
 
