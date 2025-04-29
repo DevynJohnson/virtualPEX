@@ -1,6 +1,7 @@
 /* client/App.css */
 #root {
-  max-width: 1440px;
+  max-width: auto;
+  min-width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
