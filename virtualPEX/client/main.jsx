@@ -17,6 +17,8 @@ import Household from './pages/Household.jsx';
 import Animals from './pages/Animals.jsx';
 import Colors from './pages/Colors.jsx';
 import People from './pages/People.jsx';
+import CoreWords from './pages/CoreWords.jsx';
+import Feelings from './pages/FeelingsAndEmotions.jsx';
 
 // Define routes for the application
 const router = createBrowserRouter([
@@ -33,7 +35,9 @@ const router = createBrowserRouter([
       { path: 'household', element: <Household /> },
       { path: 'animals', element: <Animals />},
       { path: 'colors', element: <Colors />},
-      { path: 'people', element: <People />}
+      { path: 'people', element: <People />},
+      { path: 'corewords', element: <CoreWords />},
+      { path: 'feelings', element: <Feelings />},
     ],
   },
 ]);

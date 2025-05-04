@@ -23,6 +23,9 @@ const NavTabs = () => {
           <BsNav.Link as={Link} to="/" active={currentPage === '/'}>
             Home
           </BsNav.Link>
+          <BsNav.Link as={Link} to="/corewords" active={currentPage === '/corewords'}>
+            Core Words
+          </BsNav.Link>
           <BsNav.Link as={Link} to="/food" active={currentPage === '/food'}>
             Food and Drinks
           </BsNav.Link>
@@ -40,6 +43,9 @@ const NavTabs = () => {
           </BsNav.Link>
           <BsNav.Link as={Link} to="/people" active={currentPage === '/people'}>
             People
+          </BsNav.Link>
+          <BsNav.Link as={Link} to="/feelings" active={currentPage === '/feelings'}>
+            Feelings and Emotions
           </BsNav.Link>
           {/* Show login if no user, otherwise show logout */}
           {!user ? (
